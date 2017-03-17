@@ -14,7 +14,7 @@
 		$to = $email;
 		$subject = 'Neue Nachricht über das Kontaktformular';
 		$message = $name.' schrieb: '.$nachricht;
-		$headers = "From: info@wiegand-web.info\r\n";
+		$headers = "From: test@example.com\r\n";
 		if (mail($to, $subject, $message, $headers)) {
 		   return true;
 		} else {
